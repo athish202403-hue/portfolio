@@ -624,6 +624,12 @@ h1 .line2 {
 /* ── CERTIFICATIONS ──────────────────────────────────────── */
 #certifications { padding: 80px 60px; }
 .certs-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 48px; }
+.resume-intro { color: var(--muted); line-height: 1.7; max-width: 620px; margin-top: -10px; }
+.resume-link { text-decoration: none; color: var(--text); min-width: min(100%, 320px); flex: 1 1 320px; }
+.resume-link:hover .resume-download { color: var(--heading); }
+.resume-download { margin-left: auto; white-space: nowrap; font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--accent); }
+@media (max-width: 560px) { .resume-link { min-width: 100%; } .resume-download { font-size: 0.6rem; } }
+
 .cert-item {
   display: flex; align-items: center; gap: 12px;
   background: var(--surface); border: 1px solid var(--border);
